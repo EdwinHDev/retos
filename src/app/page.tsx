@@ -92,7 +92,7 @@ export default function Home() {
   }
 
   return (
-    <main className="flex min-h-screen h-full">
+    <main className="flex min-h-screen h-full py-10">
 
       <div className="container mx-auto px-4">
         <section className="flex flex-col justify-center items-center h-full">
