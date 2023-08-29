@@ -24,8 +24,6 @@ export default function Home() {
   const [name, setName] = useState("");
   const [error, setError] = useState(INITIAL_ERROR);
 
-  console.log(retos)
-
   useEffect(() => {
 
     const getRetos = JSON.parse(localStorage.getItem("retos")!);
@@ -112,7 +110,7 @@ export default function Home() {
             </section>
             <section className="flex flex-col gap-2 max-w-lg w-full h-max border border-zinc-800 py-6 px-4 lg:px-10 rounded-xl">
               {
-                retos.length > 0 ? (
+                retos && retos.length > 0 ? (
                   retos.map((reto, index) => (
                     <article key={index} className="flex justify-between items-center gap-4 w-full border border-zinc-800 rounded-lg p-4 hover:bg-zinc-950 select-none">
                       <div>
